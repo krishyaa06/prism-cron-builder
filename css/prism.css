@@ -55,3 +55,6 @@ mark{background:color-mix(in srgb,var(--accent) 30%,transparent);color:var(--tex
 .foot a{color:var(--muted);text-decoration:none}.foot a:hover{color:var(--text)}
 @media (max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}.brand span:not(.mark){display:none}.hero{padding-top:30px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.pill:empty{display:none}
+.grid>*{min-width:0}
+[hidden]{display:none!important}

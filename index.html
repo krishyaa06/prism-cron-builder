@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Cron Builder · Prism Protocol</title>
+  <meta name="description" content="Visual cron expression builder with plain-English descriptions, next run preview and ready-to-paste snippets." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism Cron Builder · Prism Protocol" />
+  <meta property="og:description" content="Visual cron expression builder with plain-English descriptions, next run preview and ready-to-paste snippets." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#F5C561;--accent-2:#FF6B8A}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>Cron Builder</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-cron-builder" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">⏱️ Dev Tools</p>
+      <h1>Cron, <em>in plain English.</em></h1>
+      <p class="lead">Build cron schedules visually, read them as sentences, preview the next runs in your timezone and copy ready-made snippets.</p>
+    </section>
+    <section class="card cron-card">
+      <div class="expr-row">
+        <input id="expr" class="code expr" spellcheck="false" aria-label="Cron expression" value="*/15 9-17 * * 1-5" />
+        <button class="btn primary" id="copy">Copy</button>
+      </div>
+      <div class="labels" id="labels"><span>minute</span><span>hour</span><span>day</span><span>month</span><span>weekday</span></div>
+      <p class="human" id="human"></p>
+      <div class="row presets" id="presets"></div>
+    </section>
+    <section class="grid g2 below">
+      <div class="card">
+        <div class="card-title"><h2>Build it visually</h2></div>
+        <div class="builder" id="builder"></div>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <div class="card-title"><h2>Next runs</h2><span class="pill" id="tz"></span></div>
+          <ol class="runs" id="runs"></ol>
+        </div>
+        <div class="card">
+          <div class="card-title"><h2>Snippets</h2><div class="tabs" id="snipTabs"><button class="on" data-v="crontab">crontab</button><button data-v="gha">GitHub Actions</button><button data-v="node">node-cron</button></div></div>
+          <pre class="out" id="snippet"></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism Cron Builder · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-cron-builder" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "prism-cron-builder",
+  "version": "1.0.0",
+  "description": "Visual cron expression builder with plain-English descriptions, next run preview and ready-to-paste snippets.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "cron",
+    "crontab",
+    "cron-expression",
+    "scheduler",
+    "github-actions",
+    "developer-tools",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-cron-builder.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-cron-builder/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

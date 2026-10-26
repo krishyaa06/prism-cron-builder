@@ -1,0 +1,15 @@
+.expr-row{display:flex;gap:10px}
+.expr{font-size:clamp(20px,3.4vw,34px)!important;padding:14px 18px!important;text-align:center;letter-spacing:.12em;font-weight:600}
+.labels{display:flex;justify-content:center;gap:clamp(10px,3vw,40px);margin-top:10px;color:var(--faint);font:11px var(--mono);text-transform:uppercase;letter-spacing:.1em}
+.human{margin:18px 0 6px;text-align:center;font-size:clamp(17px,2.2vw,22px);font-weight:600}
+.human.bad{color:var(--bad);font-size:15px}
+.presets{justify-content:center;margin-top:12px;gap:6px}.presets button{border:0;cursor:pointer}
+.below{margin-top:16px}
+.builder{display:flex;flex-direction:column;gap:14px}
+.bf{display:grid;grid-template-columns:90px 1fr;gap:10px;align-items:center}
+.bf>b{font:600 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.bf .row{gap:6px}.bf select,.bf input{width:auto;padding:7px 10px;font-size:13px}
+.bf input{width:110px}
+.runs{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font:14px var(--mono)}
+.runs li::marker{color:var(--accent)}.runs span{color:var(--faint);font-size:12px;margin-left:8px}
+@media (max-width:600px){.expr-row{flex-direction:column}.bf{grid-template-columns:1fr}}

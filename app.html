@@ -1,0 +1,25 @@
+    <section class="card cron-card">
+      <div class="expr-row">
+        <input id="expr" class="code expr" spellcheck="false" aria-label="Cron expression" value="*/15 9-17 * * 1-5" />
+        <button class="btn primary" id="copy">Copy</button>
+      </div>
+      <div class="labels" id="labels"><span>minute</span><span>hour</span><span>day</span><span>month</span><span>weekday</span></div>
+      <p class="human" id="human"></p>
+      <div class="row presets" id="presets"></div>
+    </section>
+    <section class="grid g2 below">
+      <div class="card">
+        <div class="card-title"><h2>Build it visually</h2></div>
+        <div class="builder" id="builder"></div>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <div class="card-title"><h2>Next runs</h2><span class="pill" id="tz"></span></div>
+          <ol class="runs" id="runs"></ol>
+        </div>
+        <div class="card">
+          <div class="card-title"><h2>Snippets</h2><div class="tabs" id="snipTabs"><button class="on" data-v="crontab">crontab</button><button data-v="gha">GitHub Actions</button><button data-v="node">node-cron</button></div></div>
+          <pre class="out" id="snippet"></pre>
+        </div>
+      </div>
+    </section>
